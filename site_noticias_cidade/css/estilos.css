@@ -1,0 +1,243 @@
+/*Estrutura do site Noticias Cidade*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+    /*Formatação padrão imagens*/
+.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+    /*Formatação cabeçalhos*/
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+
+}
+
+.destaque h3{
+    background: #de003e;
+    color:#ffff;
+
+}
+
+.entrevista h3{
+    background: #b10333;
+    color:rgb(0, 0, 0);
+
+}
+
+#container{
+    
+    width: 750px;
+    margin: 0px auto;
+}
+
+#topo{
+    height: 180px;
+    background: url(../imagens/detalhe-topo.png) no-repeat top right;
+}
+.logo{
+    width: 152px;
+    height: 66px;
+    margin-top: 43px;
+    background: url(../imagens/logo.png) no-repeat center;
+    text-indent: -2000px; /*Usado para tirar o texto da tela, mas buscadores como Google ainda conseguem localizar o site*/
+}
+
+    /* Barra de Navegação*/
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#topo ul{
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+}
+#topo ul li{
+    float: left;
+}
+#topo ul a{
+    text-decoration: none;
+    color: #ffff;
+    background: url(../imagens/divisor.png) no-repeat left center;
+    display: block;
+    line-height: 2.1em;
+    font-size: 0.9em;
+    padding: 0.5em 1.5em;
+}
+
+#topo ul .primeiro a{
+    background: none;
+}
+#topo ul a:hover{
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos{
+    color: #ffff;
+    background: #de003e;
+    cursor: text;
+}
+
+    /*Conteúdo*/
+#conteudo{
+    margin: 20px 0 0 0;
+    background: #f5f5f5;
+}
+    /*Início da formatação/layout das páginas*/
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 0px;
+}
+
+#uma-coluna #primario{
+    width: 750px;
+    margin: 0 0 20px 0px;
+}
+
+#duas-colunas #primario{
+    width: 555px;
+    margin: 0 0 20px 0px;
+
+}
+
+#tres-colunas #primario{
+    width: 266px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+#secundario{
+    width: 266px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+    /*Início do Menu Lateral*/
+h2 {
+    font-size: 1em;
+    background: #294c71;
+    color: #ffff;
+    padding: 5px;
+}
+
+
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+
+}
+
+.caixa{
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+}
+
+.caixa-conteudo{
+    background: #ffff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#lateral ul a{
+    text-decoration: none;
+    font-size: 0.9em;
+    display: block;
+    padding: 3px;
+    line-height: 30px;
+    color: #000;
+
+}
+
+#lateral ul a:hover{
+    color: #a1a1a1;
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    font-size: 0.9em;
+    background-color: #ffff;
+    padding: 5px;
+    width: 125px;
+    border: none;
+}
+
+input.submit{
+    width: 80px;
+    color: #ffff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+
+}
+
+    /*Formatação da lista de notícias*/
+#lista-noticias li{
+    padding: 2px;
+    height: 62px;
+    
+}
+
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+
+}
+
+#lista-noticias li a{
+    text-decoration: none;
+    
+}
+
+#lista-noticias li p{
+    font-size: 0.7em;
+}
+
+#lista-noticias li h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticias li:hover{
+    background: #eeee;
+    cursor: pointer;
+}
+
+    /*Início Rodapé*/
+#container-rodape{
+    background: #294c71;
+    padding: 20px;
+    clear: both;
+}
+
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #ffff;
+}
